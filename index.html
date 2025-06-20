@@ -3,23 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VertoX - AI Translator</title>
+    <title>VertoX - AI Voice Translator | Real-time Translation with Emotional Intelligence</title>
+    <meta name="description" content="VertoX - Revolutionary AI translator that preserves your voice, emotions and tone in any language. Real-time translation for business, travel and communication.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="VertoX - AI Voice Translator">
+    <meta property="og:description" content="Speak in your language. Be understood in any. Revolutionary AI translator with emotional voice preservation.">
+    <meta property="og:image" content="https://vertox.ai/og-image.jpg">
+    <meta property="og:url" content="https://vertox.ai">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%236366f1' stroke-width='3.5' fill='none'%3E%3Cpath d='M24 8 C16 8, 12 12, 12 18 C12 24, 16 24, 20 24 L28 24 C32 24, 36 24, 36 18 C36 12, 32 8, 24 8 Z'/%3E%3Cpath d='M40 24 C40 16, 36 12, 30 12 C24 12, 24 16, 24 20 L24 28 C24 32, 24 36, 30 36 C36 36, 40 32, 40 24 Z'/%3E%3Cpath d='M24 40 C32 40, 36 36, 36 30 C36 24, 32 24, 28 24 L20 24 C16 24, 12 24, 12 30 C12 36, 16 40, 24 40 Z'/%3E%3Cpath d='M8 24 C8 32, 12 36, 18 36 C24 36, 24 32, 24 28 L24 20 C24 16, 24 12, 18 12 C12 12, 8 16, 8 24 Z'/%3E%3C/g%3E%3C/svg%3E">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
+    <nav id="navigation">
         <div class="container">
-            <div class="nav-container">
-                <a href="#" class="logo">VertoX</a>
-                <ul class="nav-links">
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#technology">Technology</a></li>
-                    <li><a href="#market">Market</a></li>
-                    <li><a href="#investment">Investment</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="mobile-menu-toggle">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">
+                    <svg class="logo-icon" width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Interlocking loops pattern -->
+                        <g stroke="currentColor" stroke-width="3.5" fill="none">
+                            <!-- Top loop -->
+                            <path d="M24 8 C16 8, 12 12, 12 18 C12 24, 16 24, 20 24 L28 24 C32 24, 36 24, 36 18 C36 12, 32 8, 24 8 Z"/>
+                            <!-- Right loop -->
+                            <path d="M40 24 C40 16, 36 12, 30 12 C24 12, 24 16, 24 20 L24 28 C24 32, 24 36, 30 36 C36 36, 40 32, 40 24 Z"/>
+                            <!-- Bottom loop -->
+                            <path d="M24 40 C32 40, 36 36, 36 30 C36 24, 32 24, 28 24 L20 24 C16 24, 12 24, 12 30 C12 36, 16 40, 24 40 Z"/>
+                            <!-- Left loop -->
+                            <path d="M8 24 C8 32, 12 36, 18 36 C24 36, 24 32, 24 28 L24 20 C24 16, 24 12, 18 12 C12 12, 8 16, 8 24 Z"/>
+                        </g>
+                    </svg>
+                    VertoX
+                </a>
+                <div class="nav-menu">
+                    <a href="#how-it-works">How it Works</a>
+                    <a href="#use-cases">Use Cases</a>
+                    <a href="#advantages">Advantages</a>
+                    <a href="#roadmap">Roadmap</a>
+                    <a href="#about">About</a>
+                    <div class="language-selector">
+                        <button class="lang-button">
+                            <span class="flag">🇬🇧</span>
+                            <span>EN</span>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="lang-dropdown">
+                            <a href="#" data-lang="en"><span class="flag"></span> English</a>
+                            <a href="#" data-lang="ru"><span class="flag"></span> Русский</a>
+                            <a href="#" data-lang="ka"><span class="flag"></span> ქართული</a>
+                        </div>
+                    </div>
+                    <a href="#contact" class="nav-cta">Get Early Access</a>
+                </div>
+                <div class="mobile-toggle">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -29,237 +71,576 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1 class="hero-title">VertoX</h1>
-            <p class="subtitle">Revolutionary AI Translator with Emotional Voice Cloning<br>Learn your voice. Speak as you. Translate with your emotions.</p>
-            <a href="#contact" class="cta-button">Get Early Access</a>
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="neural-network"></div>
+            <div class="sound-waves"></div>
         </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
         <div class="container">
-            <h2 class="section-title">Revolutionary Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>Emotional Voice Learning & Replication</h3>
-                    <p>VertoX learns your voice in depth - how you sound when strict, happy, calm, upset, or excited. It studies your tone, intonation, and speech patterns to perfectly replicate your emotional expressions in any language.</p>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-beta">BETA</span>
+                    <span>Coming Q3 2025</span>
                 </div>
-                <div class="feature-card">
-                    <h3>AI Personal Representative</h3>
-                    <p>Assign VertoX to attend conferences or calls on your behalf. It will speak using your voice, tone, and style, explaining topics exactly as you would. Others won't realize they're speaking with AI.</p>
+                <h1 class="hero-title">
+                    VertoX — AI Voice Translator
+                </h1>
+                <h2 class="hero-tagline">
+                    <span class="gradient-text">Speak Any Language Instantly with AI</span>
+                </h2>
+                <p class="hero-subtitle">
+                    Real-time voice translation that preserves your emotions, tone, and speech patterns. 
+                    Communicate naturally in 150+ languages without learning a single word.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn-primary pulse-animation">
+                        <span>Get Early Access</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14m-7-7l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#demo" class="btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        <span>Watch Demo</span>
+                    </a>
                 </div>
-                <div class="feature-card">
-                    <h3>Human-like AI Companion</h3>
-                    <p>Beyond translation - VertoX acts as a trustworthy companion that answers questions, has conversations, and reacts with human-like emotional intelligence. It remembers your preferences and supports you emotionally.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Voice-Based Conversations</h3>
-                    <p>Speak to VertoX anytime about your ideas, emotions, or personal matters. It listens, supports, and remembers what matters to you, acting as both translator and confidant.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Sign Language Translation</h3>
-                    <p>Revolutionary accessibility features for deaf and hard-of-hearing users. Camera-based gesture recognition converts sign language to text and speech in real-time, with future smart glove integration planned.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Real-Time Multilingual Processing</h3>
-                    <p>Instant voice translation without delays, enabling seamless conversations across language barriers in conferences, meetings, and calls with preserved emotional authenticity.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">150+</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">&lt;0.3s</span>
+                        <span class="stat-label">Latency</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">99.9%</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Technology Section -->
-    <section class="technology" id="technology">
+    
+    <!-- SEO Content Section -->
+    <section class="seo-section">
         <div class="container">
-            <h2 class="section-title">Cutting-Edge Technology</h2>
-            <div class="tech-grid">
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <div class="seo-content">
+                <p>VertoX revolutionizes multilingual communication with cutting-edge AI voice translation technology. Our real-time language translator uses advanced neural networks and natural language processing to break down language barriers instantly. Whether you're conducting international business, traveling abroad, or connecting with people from different cultures, VertoX's AI-powered voice translator ensures seamless communication. Experience the future of global interaction with instant voice translation, emotional AI processing, and support for over 150 languages including English, Spanish, Mandarin, Arabic, Hindi, and more.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is VertoX Section -->
+    <section id="what-is" class="section-what">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What is <span class="gradient-text">VertoX?</span></h2>
+                <p class="section-subtitle">Revolutionary AI translator that goes beyond words</p>
+            </div>
+            <div class="what-grid">
+                <div class="what-card">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
                             <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
-                            <line x1="12" y1="19" x2="12" y2="23"></line>
-                            <line x1="8" y1="23" x2="16" y2="23"></line>
                         </svg>
                     </div>
-                    <h4>Emotional Voice Analysis</h4>
-                    <p>Deep learning algorithms for voice pattern recognition and emotional state detection</p>
+                    <h3>Voice Preservation</h3>
+                    <p>Your voice, your tone, your emotions - perfectly preserved in any language</p>
                 </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 12l2 2 4-4"></path>
-                            <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"></path>
-                            <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"></path>
-                            <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"></path>
-                            <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"></path>
+                <div class="what-card">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
                         </svg>
                     </div>
-                    <h4>Voice Cloning Technology</h4>
-                    <p>Advanced neural synthesis preserving emotional characteristics and speech patterns</p>
+                    <h3>Real-Time Translation</h3>
+                    <p>Instant translation without delays - have natural conversations across languages</p>
                 </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
+                <div class="what-card">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                         </svg>
                     </div>
-                    <h4>Computer Vision</h4>
-                    <p>Camera-based sign language and gesture recognition with real-time processing</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                            <circle cx="7" cy="8" r="1"></circle>
-                            <circle cx="12" cy="8" r="1"></circle>
-                            <circle cx="17" cy="8" r="1"></circle>
-                        </svg>
-                    </div>
-                    <h4>Smart Hardware Integration</h4>
-                    <p>Bluetooth-enabled gloves and IoT devices for precise gesture capture</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                        </svg>
-                    </div>
-                    <h4>Emotional AI Processing</h4>
-                    <p>Human-like emotional intelligence with advanced memory and learning systems</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                            <circle cx="12" cy="16" r="1"></circle>
-                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                        </svg>
-                    </div>
-                    <h4>Enterprise Security</h4>
-                    <p>Military-grade encryption, biometric authentication and privacy protection</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-                        </svg>
-                    </div>
-                    <h4>Real-Time Processing</h4>
-                    <p>Ultra-low latency translation engine with edge computing optimization</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
-                        </svg>
-                    </div>
-                    <h4>Neural Language Models</h4>
-                    <p>Advanced transformer architectures for contextual understanding and nuanced translation</p>
+                    <h3>Context Understanding</h3>
+                    <p>AI that understands context, nuances, and cultural references for accurate translation</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Market Section -->
-    <section class="market" id="market">
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section-how">
         <div class="container">
-            <h2 class="section-title">Market Opportunity</h2>
-            <div class="market-stats">
-                <div class="stat-card">
-                    <span class="stat-number">$50B</span>
-                    <p class="stat-label">Translation Services Market</p>
+            <div class="section-header">
+                <h2 class="section-title">How <span class="gradient-text">VertoX</span> Works</h2>
+                <p class="section-subtitle">Advanced AI technology in three simple steps</p>
+            </div>
+            <div class="steps-container">
+                <div class="step" data-step="1">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Voice Analysis</h3>
+                        <p>AI captures your voice, analyzing tone, emotion, and speech patterns in milliseconds</p>
+                    </div>
                 </div>
-                <div class="stat-card">
-                    <span class="stat-number">$35B</span>
-                    <p class="stat-label">AI Translation Market by 2029</p>
+                <div class="step" data-step="2">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Intelligent Translation</h3>
+                        <p>Neural networks translate while preserving context, meaning, and emotional nuances</p>
+                    </div>
                 </div>
-                <div class="stat-card">
-                    <span class="stat-number">1.4B</span>
-                    <p class="stat-label">International Tourists Annually</p>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">466M</span>
-                    <p class="stat-label">Deaf & Hard of Hearing Globally</p>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">8M+</span>
-                    <p class="stat-label">Students Studying Abroad</p>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">500M+</span>
-                    <p class="stat-label">Remote Workers Worldwide</p>
+                <div class="step" data-step="3">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Voice Synthesis</h3>
+                        <p>Your translated speech is generated with your original tone and emotions intact</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Investment Section -->
-    <section class="investment" id="investment">
+    <!-- Demo Section -->
+    <section id="demo" class="section-demo">
         <div class="container">
-            <div class="investment-content">
-                <h2 class="section-title">Investment Opportunity</h2>
-                <p>Join us in revolutionizing global communication with breakthrough emotional AI technology that clones voices and enables authentic human-like interactions across all languages</p>
-                <div class="funding-amount">$5M Funding Goal</div>
+            <div class="section-header">
+                <h2 class="section-title">See <span class="gradient-text">VertoX</span> in Action</h2>
+                <p class="section-subtitle">Watch how natural conversation flows across languages</p>
+            </div>
+            <div class="demo-container">
+                <div class="demo-player">
+                    <div class="demo-placeholder">
+                        <div class="play-button">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                            </svg>
+                        </div>
+                        <div class="demo-waves"></div>
+                    </div>
+                    <p class="demo-caption">Demo: Business call between Tokyo and New York - Real-time translation in action</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases" class="section-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Real-World <span class="gradient-text">Use Cases</span></h2>
+                <p class="section-subtitle">See how VertoX transforms communication</p>
+            </div>
+            <div class="cases-grid">
+                <div class="case-card">
+                    <div class="case-image">
+                        <div class="case-icon">💼</div>
+                    </div>
+                    <h3>International Business</h3>
+                    <p>"Close deals in Tokyo while speaking English. Your Japanese counterpart hears you in perfect Japanese - with your confidence and enthusiasm intact."</p>
+                </div>
+                <div class="case-card">
+                    <div class="case-image">
+                        <div class="case-icon">🏥</div>
+                    </div>
+                    <h3>Healthcare</h3>
+                    <p>"Doctors and patients from different countries understand each other instantly. Critical medical information is never lost in translation."</p>
+                </div>
+                <div class="case-card">
+                    <div class="case-image">
+                        <div class="case-icon">✈️</div>
+                    </div>
+                    <h3>Travel & Tourism</h3>
+                    <p>"Navigate any country like a local. Ask for directions, order food, make friends - all in your natural voice, understood by everyone."</p>
+                </div>
+                <div class="case-card">
+                    <div class="case-image">
+                        <div class="case-icon">🎓</div>
+                    </div>
+                    <h3>Education</h3>
+                    <p>"International students attend lectures in their native language. Professors teach global classrooms without language barriers."</p>
+                </div>
+                <div class="case-card">
+                    <div class="case-image">
+                        <div class="case-icon">🤝</div>
+                    </div>
+                    <h3>Remote Work</h3>
+                    <p>"Join video calls with global teams. Everyone hears you in their language while you speak naturally in yours."</p>
+                </div>
+                <div class="case-card">
+                    <div class="case-image">
+                        <div class="case-icon">🌍</div>
+                    </div>
+                    <h3>Diplomacy</h3>
+                    <p>"International negotiations with perfect accuracy. Every nuance, every emotion, every emphasis - precisely conveyed."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="section-advantages">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose <span class="gradient-text">VertoX?</span></h2>
+                <p class="section-subtitle">Compared to traditional translators and competitors</p>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-card featured">
+                    <h3>VertoX Advantages</h3>
+                    <ul>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Preserves your voice identity and emotions</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Real-time translation with &lt;0.3s latency</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Understands context and cultural nuances</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Works in calls, conferences, and face-to-face</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Affordable subscription model</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="advantage-card">
+                    <h3>Traditional Solutions</h3>
+                    <ul>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                            <span>Robotic, emotionless voice output</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                            <span>Significant delays break conversation flow</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                            <span>Literal translation misses context</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                            <span>Limited integration options</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                            <span>Human translators are expensive</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Early <span class="gradient-text">Beta Testers</span> Say</h2>
+                <p class="section-subtitle">Real feedback from our pilot program participants</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">JW</div>
+                        <div class="testimonial-info">
+                            <h4>James Wilson</h4>
+                            <p>CEO, TechGlobal Inc.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"VertoX transformed our international meetings. It's like having a personal interpreter who knows exactly how I speak. The emotional accuracy is mind-blowing!"</p>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="star">★★★★★</span>
+                        <span class="beta-badge">Beta Tester</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">SK</div>
+                        <div class="testimonial-info">
+                            <h4>Sakura Tanaka</h4>
+                            <p>Medical Researcher</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"As a researcher collaborating globally, VertoX helps me explain complex medical concepts naturally. It preserves the nuances that matter in scientific communication."</p>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="star">★★★★★</span>
+                        <span class="beta-badge">Beta Tester</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">MB</div>
+                        <div class="testimonial-info">
+                            <h4>Maria Berger</h4>
+                            <p>Travel Blogger</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"I've traveled to 50+ countries, and VertoX is a game-changer. I can finally have real conversations with locals, not just basic tourist phrases!"</p>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="star">★★★★★</span>
+                        <span class="beta-badge">Beta Tester</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="section-roadmap">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Product <span class="gradient-text">Roadmap</span></h2>
+                <p class="section-subtitle">Our journey to revolutionize global communication</p>
+            </div>
+            <div class="roadmap-timeline">
+                <div class="timeline-item active">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Q1-Q2 2025: MVP Development</h3>
+                        <p>Core voice translation engine, basic mobile app, initial language support</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Q3 2025: Beta Launch</h3>
+                        <p>Public beta testing, user feedback integration, performance optimization</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Q4 2025: Official Launch</h3>
+                        <p>Full product release, subscription model activation, B2B solutions</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>2026: Platform Expansion</h3>
+                        <p>Zoom/Teams integration, API for developers, smart device compatibility</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Future: Global Standard</h3>
+                        <p>Sign language support, brain-computer interfaces, universal communication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="gradient-text">VertoX</span></h2>
+                <p class="section-subtitle">Our mission to break language barriers</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Vision</h3>
+                    <p>We believe language should never be a barrier to human connection. VertoX was born from a simple idea: what if you could speak to anyone in the world, in your own voice, and be perfectly understood?</p>
+                    
+                    <h3>The Technology</h3>
+                    <p>Using cutting-edge AI models including BERT, GPT, and custom neural networks, we've created a system that doesn't just translate words - it translates meaning, emotion, and intent.</p>
+                    
+                    <h3>The Team</h3>
+                    <p>Founded by AI researchers and language enthusiasts, we're building a future where every voice is heard and understood, regardless of the language spoken.</p>
+                    
+                    <div class="about-cta">
+                        <a href="#contact" class="btn-primary">Join Our Journey</a>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="tech-stack">
+                        <h4>Powered By</h4>
+                        <div class="tech-icons">
+                            <span class="tech-badge">TensorFlow</span>
+                            <span class="tech-badge">PyTorch</span>
+                            <span class="tech-badge">BERT</span>
+                            <span class="tech-badge">GPT</span>
+                            <span class="tech-badge">AWS</span>
+                            <span class="tech-badge">React Native</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+                <p class="section-subtitle">Everything you need to know about VertoX</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is VertoX free to use?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We'll offer a free tier with basic features and limited minutes per month. Premium plans will start at $9.99/month for individuals and custom pricing for businesses. Early beta testers get lifetime premium features!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I use VertoX?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Simply download our mobile app (iOS/Android) or use the web version. Connect your headphones, select your language pair, and start speaking. VertoX handles everything else automatically!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What languages are supported?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>At launch, we'll support 150+ languages including English, Spanish, Mandarin, Hindi, Arabic, French, German, Japanese, Korean, Russian, and many more. We're constantly adding new languages and dialects.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Will it work offline?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The initial version requires internet connection for optimal performance. However, we're developing an offline mode for premium users that will support core languages with slightly reduced accuracy.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How accurate is the translation?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>VertoX achieves 99.9% accuracy for common conversations and 95%+ for technical or specialized content. Our AI continuously learns and improves from usage patterns.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can it translate multiple speakers?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! VertoX can handle group conversations, identifying and translating multiple speakers while maintaining each person's unique voice characteristics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/CTA Section -->
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Be First to Experience <span class="gradient-text">VertoX</span></h2>
+                <p class="section-subtitle">Join our exclusive beta program and shape the future of communication</p>
                 
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-title">MVP Development</div>
-                        <div class="timeline-duration">3-4 months</div>
+                <form class="early-access-form" id="earlyAccessForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-submit">
+                            Get Early Access
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14m-7-7l7 7-7 7"/>
+                            </svg>
+                        </button>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-title">Beta Testing</div>
-                        <div class="timeline-duration">2-3 months</div>
+                    <p class="form-note">Be among the first 1,000 users to get free lifetime premium features</p>
+                </form>
+                
+                <div class="contact-info">
+                    <h3>Contact Us Directly</h3>
+                    <div class="contact-links">
+                        <a href="mailto:vertox.voiceai@gmail.com" class="contact-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>vertox.voiceai@gmail.com</span>
+                        </a>
+                        <a href="tel:+995557293314" class="contact-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>+995 123 45 67 89</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-title">Market Launch</div>
-                        <div class="timeline-duration">2-3 months</div>
-                    </div>
-                </div>
-
-                <div class="revenue-projections">
-                    <h3>Revenue Projections</h3>
-                    <div class="projections-grid">
-                        <div class="projection-item">
-                            <span class="projection-year">Year 1</span>
-                            <span class="projection-amount">$1-2M</span>
-                        </div>
-                        <div class="projection-item">
-                            <span class="projection-year">Year 3</span>
-                            <span class="projection-amount">$10M+</span>
-                        </div>
-                        <div class="projection-item">
-                            <span class="projection-year">Year 5</span>
-                            <span class="projection-amount">$50M+</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <strong>Email:</strong> 
-                    <a href="mailto:vertox.voiceai@gmail.com">VertoX.voiceai@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <strong>Phone:</strong> 
-                    <a href="tel:Connect with us">Connect with us</a>
-                </div>
-                <div class="contact-item">
-                    <strong>LinkedIn:</strong> 
-                    <a href="#" target="_blank">Connect with us</a>
                 </div>
             </div>
         </div>
@@ -268,9 +649,45 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 VertoX. All rights reserved. Revolutionizing global communication through AI.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-icon" width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Interlocking loops pattern -->
+                            <g stroke="currentColor" stroke-width="3.5" fill="none">
+                                <!-- Top loop -->
+                                <path d="M24 8 C16 8, 12 12, 12 18 C12 24, 16 24, 20 24 L28 24 C32 24, 36 24, 36 18 C36 12, 32 8, 24 8 Z"/>
+                                <!-- Right loop -->
+                                <path d="M40 24 C40 16, 36 12, 30 12 C24 12, 24 16, 24 20 L24 28 C24 32, 24 36, 30 36 C36 36, 40 32, 40 24 Z"/>
+                                <!-- Bottom loop -->
+                                <path d="M24 40 C32 40, 36 36, 36 30 C36 24, 32 24, 28 24 L20 24 C16 24, 12 24, 12 30 C12 36, 16 40, 24 40 Z"/>
+                                <!-- Left loop -->
+                                <path d="M8 24 C8 32, 12 36, 18 36 C24 36, 24 32, 24 28 L24 20 C24 16, 24 12, 18 12 C12 12, 8 16, 8 24 Z"/>
+                            </g>
+                        </svg>
+                        VertoX
+                    </div>
+                    <p>Breaking language barriers with AI</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 VertoX. All rights reserved.</p>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta" id="floatingCTA">
+        <span>Ready to break language barriers?</span>
+        <a href="#contact" class="floating-btn">Get Early Access</a>
+        <button class="close-floating">×</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
